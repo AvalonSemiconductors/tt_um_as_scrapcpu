@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A simple 6-bit MCU, but built with the sky130_as_sc_hs SCL. Check [here](https://avalonsemiconductors.github.io/CI2406/scrapcpu.html) for documentation on the CPU architecture.
 
 ## How to test
 
-Explain how to use your project
+Wire up a 25Q32 (or compatible) spiflash with valid bytecode using the SDO, SDI, SCLK and CSb pins, pull INT low and HS low.
+A test program is included in this repo under test/asm/ which counts up on the PA lines.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+25Q32 (or compatible) spiflash to hold CPU bytecode. Anything you want on the GPIO lines.
